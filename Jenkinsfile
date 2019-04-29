@@ -6,15 +6,9 @@ node {
     stage ("build")
     {
     bat 'mvn package'
-    }
-    stage ("sonar")
-    {
-    bat 'mvn sonar:sonar'   
-    }
+    }    
     stage ("artifactory")
     archiveArtifacts '**/*.war'
-    stage ("Unittesting")
-     junit '**\\gameoflife-web\\target\\surefire-reports\\*.xml'
      stage ("analysis")
      {
               timeout(time: 1, unit: 'HOURS') {
