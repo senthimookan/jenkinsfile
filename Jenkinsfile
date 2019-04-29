@@ -9,6 +9,12 @@ node {
     }    
     stage ("artifactory"){
         archiveArtifacts '**/*.war'
+    },
+     stage ("analysis")
+     {
+              timeout(time: 1, unit: 'HOURS') {
+                waitForQualityGate abortPipeline: true
+              }
     }
     stage ("deploy")
     {
