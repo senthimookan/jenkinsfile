@@ -23,7 +23,7 @@ node {
     }
     stage ("deploy")
     {
-        sh 'cp -R "C:\\Users\\Lap GT Adayar 10\\.jenkins\\workspace\\mavenpipeline\\gameoflife-web\\target\\gameoflife.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps"'
+        sh 'cp -R "C:\\Program Files (x86)\\Jenkins\\workspace\jenkin demo\\gameoflife-web\\target\\gameoflife.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps"'
     }
 
     
