@@ -9,7 +9,7 @@ node {
     }    
     stage ("deploy")
     {
-        sh 'cp -R "C:\\Program Files (x86)\\Jenkins\\workspace\\Jenkinemavendemo\\gameoflife-web\\target\\gameoflife.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps"'
+        sh 'cp -R "/c/Program Files (x86)/Jenkins/workspace/Jenkinemavendemo/gameoflife-web/target/gameoflife.war" "/c/Program Files/Apache Software Foundation/Tomcat 9.0/webapps"'
     }
 
     
