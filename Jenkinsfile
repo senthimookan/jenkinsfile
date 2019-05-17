@@ -1,7 +1,7 @@
 node {
     stage ("scm")
     {
-    git 'https://github.com/ghanigreen/maven_demo.git'
+    git 'https://github.com/senthimookan/maven_demo.git'
     }
     stage ("build")
     {
