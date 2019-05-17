@@ -3,10 +3,10 @@ node {
     {
     git 'https://github.com/senthimookan/maven_demo.git'
     }
-   stage ("build")
-   {
-     mvn "package"
-     }    
+  //stage ("build")
+  // {
+  //   mvn "package"
+  //   }    
     stage ("deploy")
     {
         echo "copy file"
