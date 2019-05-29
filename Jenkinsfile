@@ -13,6 +13,8 @@ node {
  
         bat 'cd "C:/Program Files (x86)/Jenkins/workspace/PipelinedemoJenkinsfilefromscm/gameoflife-web/target"'
         echo "change directory successful"
+        bat 'cd "C:/Program Files/Apache Software Foundation/Tomcat 9.0/webapps"'
+        echo "change directory2 successful"
   //      bat 'copy gameoflife.war "C:/Program Files/Apache Software Foundation/Tomcat 9.0/webapps"'
 
        bat 'copy  "C:/Program Files (x86)/Jenkins/workspace/PipelinedemoJenkinsfilefromscm/gameoflife-web/target/gameoflife.war" "C:/Program Files/Apache Software Foundation/Tomcat 9.0/webapps"'
