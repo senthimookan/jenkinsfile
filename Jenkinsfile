@@ -10,7 +10,7 @@ node {
     stage ("deploy")
     {
         echo "copy file"
- bat 'copy  "C:/Program Files (x86)/Jenkins/workspace/PipelinedemoJenkinsfilefromscm/gameoflife-web/target/gameoflife.war" "C:/Program Files/Apache Software Foundation/Tomcat 9.0_Tomcat9a/webapps"'
+ bat 'copy  "C:/Program Files (x86)/Jenkins/workspace/PipelinedemoJenkinsfilefromscm/gameoflife-web/target/gameoflife.war" "C:/Program Files/Apache Software Foundation/Tomcat 9.0/webapps"'
 
  //       sh 'cp -R "/C/Program Files/Jenkins/workspace/mavendemo1/gameoflife-web/target/gameoflife.war" "/C/Program Files/Apache Software Foundation/Tomcat 9.0_Tomcat9a/webapps"'
     }
