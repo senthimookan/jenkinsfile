@@ -5,7 +5,7 @@ node {
     }
   stage ("build")
    {
-     mvn "package"
+     "package"
     }    
     stage ("deploy")
     {
